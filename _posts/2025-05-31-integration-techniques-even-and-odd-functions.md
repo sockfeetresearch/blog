@@ -4,7 +4,7 @@ date: 2025-05-31 08:23
 categories: math integration
 ---
 
-# Integration Techniques - Even and Odd Functions
+# Integration Techniques: Even and Odd Functions
 
 For symmetric integration of even or odd functions, you can show that the following relationship is true:
 
@@ -14,7 +14,8 @@ $$
     \begin{cases}
       0 & \text{if $f(x)$ is an odd function}\\
       2\int^a_0 f(x)dx & \text{if $f(x)$ is even}
-    \end{cases}  
+    \end{cases}
+    \tag{1}
 $$
 
 
@@ -28,33 +29,49 @@ Looking at the graphical representation of the even and odd functions, it become
 
 The derivation of the above definitions starts with the decompositions of the integral function.
 
-$$\int^a_{-a} f(x) dx = \int^0_{-a} f(x) dx + \int^a_0 f(x) dx \tag{1} $$
+$$
+\int^a_{-a} f(x) dx = \int^0_{-a} f(x) dx + \int^a_0 f(x) dx \tag{2}
+$$
 
 Looking at the first term on the RHS, we can substitute $u = -x$ and $-du = dx$: 
 
-$$\int^{x=0}_{x=-a} f(x) dx = \int^{u=0}_{u=a} f(-u) (-du) = -\int^0_{a} f(-u) du = \int^a_{0} f(-u) du$$
+$$
+\int^{x=0}_{x=-a} f(x) dx = \int^{u=0}_{u=a} f(-u) (-du) = -\int^0_{a} f(-u) du = \int^a_{0} f(-u) du
+$$
 
 With this final form, we can simply rename the $u$ variable back to $x$:
 
-$$= \int^a_{0} f(-u) du = \int^a_{0} f(-x) dx$$
+$$
+= \int^a_{0} f(-u) du = \int^a_{0} f(-x) dx
+$$
 
-Substituting back into equation $\eqref{eq1}$ then becomes
+Substituting back into equation $(2)$ then becomes
 
-$$\int^a_{-a} f(x) dx = \int^a_0 f(-x) dx + \int^a_0 f(x) dx $$
+$$
+\int^a_{-a} f(x) dx = \int^a_0 f(-x) dx + \int^a_0 f(x) dx
+$$
 
-$$\int^a_{-a} f(x) dx = \int^a_0 \left[ f(-x) + f(x)\right] dx \tag{2}$$
+$$
+\int^a_{-a} f(x) dx = \int^a_0 \left[ f(-x) + f(x)\right] dx \tag{3}
+$$
 
 Now for an odd function where
 
-$$f(-x) = -f(x) \quad \text{or} \quad f(x) + f(-x) = 0$$
+$$
+f(-x) = -f(x) \quad \text{or} \quad f(x) + f(-x) = 0
+$$
 
 the integral is zero. For an even function
 
-$$f(-x) = f(x) \quad \text{or} \quad f(x) + f(-x) = 2f(x)$$
+$$
+f(-x) = f(x) \quad \text{or} \quad f(x) + f(-x) = 2f(x)
+$$
 
 which then implies
 
-$$\int^a_0 \left[ f(-x) + f(x)\right] dx = 2 \int^a_0 f(x) dx$$
+$$
+\int^a_0 \left[ f(-x) + f(x)\right] dx = 2 \int^a_0 f(x) dx
+$$
 
 
 # References
