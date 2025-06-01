@@ -28,7 +28,7 @@ Looking at the graphical representation of the even and odd functions, it become
 
 
 <p align="center" width="100%">
-    <img width="33%" src="assets/images/even_odd_functions.png">
+    <img width="50%" src="{{ '/assets/images/even_odd_functions.png' | relative_url }}">
 </p>
 
 
