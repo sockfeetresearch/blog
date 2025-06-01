@@ -32,6 +32,8 @@ Looking at the graphical representation of the even and odd functions, it become
 </p>
 
 
+<img src="{{ '/assets/images/even_odd_functions.png' | relative_url }}" alt="My image" width="500">
+
 The derivation of the above definitions starts with the decompositions of the integral function.
 
 $$
