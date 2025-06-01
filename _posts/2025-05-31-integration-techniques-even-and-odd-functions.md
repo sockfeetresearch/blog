@@ -4,8 +4,6 @@ date: 2025-05-31 08:23
 categories: math integration
 ---
 
-# Integration Techniques: Even and Odd Functions
-
 For symmetric integration of even or odd functions, you can show that the following relationship is true:
 
 
