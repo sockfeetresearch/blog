@@ -1,5 +1,5 @@
 ---
-title: Integration Techniques: Even and Odd Functions
+title: "Integration Techniques: Even and Odd Functions"
 date: 2025-05-31 08:23
 categories: math integration
 ---
