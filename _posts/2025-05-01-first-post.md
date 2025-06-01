@@ -1,5 +1,5 @@
 ---
-title: "Temp Post"
+title: Temp Post
 date: 2025-05-01
 ---
 
