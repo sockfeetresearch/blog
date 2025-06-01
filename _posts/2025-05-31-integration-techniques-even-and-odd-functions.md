@@ -27,6 +27,11 @@ Looking at the graphical representation of the even and odd functions, it become
 ![Even and Odd Functions]({{ site.baseurl }}/assets/images/even_odd_functions.png)
 
 
+<p align="center" width="100%">
+    <img width="33%" src="{{ site.baseurl }}/assets/images/even_odd_functions.png">
+</p>
+
+
 The derivation of the above definitions starts with the decompositions of the integral function.
 
 $$
