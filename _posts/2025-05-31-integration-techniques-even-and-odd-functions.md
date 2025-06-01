@@ -8,6 +8,7 @@ categories: math integration
 
 For symmetric integration of even or odd functions, you can show that the following relationship is true:
 
+
 $$
   \int^a_{-a} f(x) dx =
     \begin{cases}
@@ -15,6 +16,7 @@ $$
       2\int^a_0 f(x)dx & \text{if $f(x)$ is even}
     \end{cases}  
 $$
+
 
 Even functions are classified as those where the following relationship holds: $f(-x) = -f(x)$. Odd functions, on the other hand, as classified as follows: $f(-x) = f(x)$.
 
