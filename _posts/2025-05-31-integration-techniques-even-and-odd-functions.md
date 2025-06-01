@@ -23,16 +23,9 @@ Even functions are classified as those where the following relationship holds: $
 
 Looking at the graphical representation of the even and odd functions, it becomes obvious why the above relation is true: the negative integral of the odd function will cancel itself out with the positive portion, while the even function is symmetric about the y-axis:
 
-
-![Even and Odd Functions]({{ site.baseurl }}/assets/images/even_odd_functions.png)
-
-
 <p align="center" width="100%">
-    <img width="50%" src="{{ '/assets/images/even_odd_functions.png' | relative_url }}">
+    <img width="33%" src="{{ '/assets/images/even_odd_functions.png' | relative_url }}">
 </p>
-
-
-<img src="{{ '/assets/images/even_odd_functions.png' | relative_url }}" alt="My image" width="500">
 
 The derivation of the above definitions starts with the decompositions of the integral function.
 
