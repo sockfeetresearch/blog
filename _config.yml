@@ -3,7 +3,7 @@ url: "https://www.sockfeetresearch.com"
 baseurl: ""   # ← empty!
 
 # Build settings
-markdown: kramdown
-kramdown:
-  math_engine: mathjax
-permalink: /:year/:title:output_ext
+# markdown: kramdown
+# kramdown:
+#   math_engine: mathjax
+# permalink: /:year/:title:output_ext
