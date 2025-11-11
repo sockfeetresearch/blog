@@ -6,8 +6,5 @@ baseurl: ""   # ← empty!
 markdown: kramdown
 kramdown:
   math_engine: mathjax
-=======
-# markdown: kramdown
-# kramdown:
-#   math_engine: mathjax
-# permalink: /:year/:title:output_ext
+
+permalink: /:year/:title:output_ext
