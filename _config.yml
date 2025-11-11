@@ -9,3 +9,8 @@ description: Experimentation in agency
 
 url: "https://www.sockfeetresearch.com"
 baseurl: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
