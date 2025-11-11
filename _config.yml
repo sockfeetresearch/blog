@@ -3,6 +3,9 @@ theme: minima
 title: Sockfeet Research
 
 # Your name to show in the footer
-author: Some Person
+author: Sockfeet Research
 
-description: Website description
+description: Experimentation in agency
+
+url: "https://www.sockfeetresearch.com"
+baseurl: ""
