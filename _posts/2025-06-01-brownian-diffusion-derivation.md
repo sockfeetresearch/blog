@@ -39,14 +39,14 @@ Starting out with a simple figure, the number of particles at a certain point of
 
 <!-- ![Diffusion Figure 1](diffusion_fig_1.png) -->
 <p align="center" width="100%">
-    <img width="40%" src="{{ '/assets/images/diffusion_fig_1.png' | relative_url }}">
+    <img width="100%" src="{{ '/assets/images/diffusion_fig_1.png' | relative_url }}">
 </p>
 
 The adding a second cross-section that is $\Delta$ distance away yields the following:
 
 <!-- ![Diffusion Figure 2](diffusion_fig_2.png) -->
 <p align="center" width="100%">
-    <img width="40%" src="{{ '/assets/images/diffusion_fig_2.png' | relative_url }}">
+    <img width="100%" src="{{ '/assets/images/diffusion_fig_2.png' | relative_url }}">
 </p>
 
 By definition, the probability that a certain number of particles will move by a distance of $\Delta$ is $\phi\left(\Delta\right)$. As such, the probability some molecules will move to the area defined by $f\left(x, t+\tau\right)$ can be defined by the integral of the probability density function over the full range of $\Delta$ values multiplied by the function of particles per unit area at the distance $\Delta$ away from the end location:
