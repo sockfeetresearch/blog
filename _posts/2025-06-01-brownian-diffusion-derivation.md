@@ -83,6 +83,7 @@ $$
 f + \tau \frac{\partial f}{\partial t} = f \int^{\infty}_{-\infty} \phi(\Delta) d\Delta + \frac{\partial f}{\partial x} \int^{\infty}_{-\infty} \Delta \phi(\Delta) d\Delta + \frac{\partial^2 f}{\partial x^2} \int^{\infty}_{-\infty} \frac{\Delta^2}{2} \phi(\Delta) d\Delta
 $$
 
+where $f = f(x, t)$. 
 
 
 
