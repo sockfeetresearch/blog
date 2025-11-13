@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+
+  <!-- Theme stylesheet (minima provides /assets/main.css) -->
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <!-- Google fonts (optional, mirrors minima feel) -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+
+  {% include mathjax.html %}
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="wrapper site-header-inner">
+      <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      {% if site.description %}
+        <p class="site-description">{{ site.description }}</p>
+      {% endif %}
+      <nav class="site-nav" role="navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about.html' | relative_url }}">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main wrapper" role="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer wrapper">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
+  </footer>
+
+  <!-- Optional theme JS if present -->
+  <script src="{{ '/assets/main.js' | relative_url }}"></script>
+</body>
+</html>
