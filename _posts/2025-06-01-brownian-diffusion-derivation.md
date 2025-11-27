@@ -39,32 +39,32 @@ Starting out with a simple figure, the number of particles at a certain point of
 
 <!-- ![Diffusion Figure 1](diffusion_fig_1.png) -->
 <p align="center" width="100%">
-    <img width="100%" src="{{ '/assets/images/diffusion_fig_1.png' | relative_url }}">
+    <img width="75%" src="{{ '/assets/images/diffusion_fig_1.png' | relative_url }}">
 </p>
 
 The adding a second cross-section that is $\Delta$ distance away yields the following:
 
 <!-- ![Diffusion Figure 2](diffusion_fig_2.png) -->
 <p align="center" width="100%">
-    <img width="100%" src="{{ '/assets/images/diffusion_fig_2.png' | relative_url }}">
+    <img width="75%" src="{{ '/assets/images/diffusion_fig_2.png' | relative_url }}">
 </p>
 
 By definition, the probability that a certain number of particles will move by a distance of $\Delta$ is $\phi\left(\Delta\right)$. As such, the probability some molecules will move to the area defined by $f\left(x, t+\tau\right)$ can be defined by the integral of the probability density function over the full range of $\Delta$ values multiplied by the function of particles per unit area at the distance $\Delta$ away from the end location:
 
 $$
-f\left(x, t+\tau\right)dx = \int^{\infty}_{-\infty} f\left(x+\Delta, t\right)dx \phi(\Delta) d\Delta
+f\left(x, t+\tau\right)dx = \int^{\infty}_{-\infty} f\left(x+\Delta, t\right)dx \phi(\Delta) d\Delta \tag{4}
 $$
 
 rearranging yields
 
 $$
-f\left(x, t+\tau\right)dx = dx \int^{\infty}_{-\infty} f\left(x+\Delta, t\right) \phi(\Delta) d\Delta
+f\left(x, t+\tau\right)dx = dx \int^{\infty}_{-\infty} f\left(x+\Delta, t\right) \phi(\Delta) d\Delta  \tag{5}
 $$
 
 The $dx$ terms can be crossed out
 
 $$
-f\left(x, t+\tau\right) = \int^{\infty}_{-\infty} f\left(x+\Delta, t\right) \phi(\Delta) d\Delta
+f\left(x, t+\tau\right) = \int^{\infty}_{-\infty} f\left(x+\Delta, t\right) \phi(\Delta) d\Delta  \tag{6}
 $$
 
 The left-hand-side of the above equation can written as
@@ -80,12 +80,58 @@ $$
 Plugging the above two equations back into the original integral yields
 
 $$
-f + \tau \frac{\partial f}{\partial t} = f \int^{\infty}_{-\infty} \phi(\Delta) d\Delta + \frac{\partial f}{\partial x} \int^{\infty}_{-\infty} \Delta \phi(\Delta) d\Delta + \frac{\partial^2 f}{\partial x^2} \int^{\infty}_{-\infty} \frac{\Delta^2}{2} \phi(\Delta) d\Delta
+f + \tau \frac{\partial f}{\partial t} = f \int^{\infty}_{-\infty} \phi(\Delta) d\Delta + \frac{\partial f}{\partial x} \int^{\infty}_{-\infty} \Delta \phi(\Delta) d\Delta + \frac{\partial^2 f}{\partial x^2} \int^{\infty}_{-\infty} \frac{\Delta^2}{2} \phi(\Delta) d\Delta  \tag{7}
 $$
 
-where $f = f(x, t)$. 
+where $f = f(x, t)$. Evaluating the individual terms on the right-hand-side, the first integral is by definition equal to 1: 
+
+$$
+\int^{\infty}_{-\infty} \phi(\Delta) d\Delta = 1
+$$
+The second integral is set to zero since it is an odd function: 
+
+$$
+\int^{\infty}_{-\infty} \Delta \phi(\Delta) d\Delta = 0
+$$
+And the third integral becomes:
+
+$$
+\int^{\infty}_{-\infty} \frac{\Delta^2}{2} \phi(\Delta) d\Delta = \frac{1}{2} |\Delta^2|
+$$
+
+Putting everything together:
+
+$$
+f + \tau \frac{\partial f}{\partial t} = f + \frac{1}{2} \Delta^2\frac{\partial^2 f}{\partial x^2}  \tag{8}
+$$
+
+Further simplifying: 
+
+$$
+\frac{\partial f}{\partial t} = \frac{\Delta^2}{2\tau} \frac{\partial^2 f}{\partial x^2}  \tag{8}
+$$
+
+We can then define the diffusion coefficient as:
+
+$$
+D = \frac{\Delta^2}{2\tau} \tag{9}
+$$
+
+which results in the final form of the diffusion equation:
+
+$$
+\frac{\partial f}{\partial t} = D \frac{\partial^2 f}{\partial x^2}  \tag{10}
+$$
 
 
+
+
+
+
+Assumptions:
+- Taylor series truncated after the $\Delta^2$ term, impicit assumtpion that $f$ is smooth and jumps are small enough that higher moments don't matter.
+- Symmetric step distribution (no drift).
+- Continuum limit: $\tau \rightarrow 0$, $|\Delta| \rightarrow 0$
 
 ## References
 
