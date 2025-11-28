@@ -68,7 +68,9 @@ $$
 The left-hand-side of the above equation can written as
 
 $$
-f\left(x, t+\tau\right) = f\left(x,t\right) + \tau \frac{\partial f}{\partial t}$$
+f\left(x, t+\tau\right) = f\left(x,t\right) + \tau \frac{\partial f}{\partial t}
+$$
+
 The right-hand-side function within the integral can be expanded using a Taylor series
 
 $$
@@ -131,9 +133,10 @@ $$
 Assumptions:
 - Taylor series truncated after the $\Delta^2$ term, impicit assumtpion that $f$ is smooth and jumps are small enough that higher moments don't matter.
 - Symmetric step distribution (no drift).
-- Continuum limit: $\tau \rightarrow 0$, $|\Delta| \rightarrow 0$
+- Continuum limit: $\tau \rightarrow 0$ while $|\Delta| \rightarrow 0$
 
 
 
 ## References
 
+Einstein, Albert. Investigations on the Theory of the Brownian Movement. Courier Corporation, 1956.
