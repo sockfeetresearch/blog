@@ -86,11 +86,13 @@ where $f = f(x, t)$. Evaluating the individual terms on the right-hand-side, the
 $$
 \int^{\infty}_{-\infty} \phi(\Delta) d\Delta = 1
 $$
+
 The second integral is set to zero since it is an [odd function]({% post_url 2025-05-31-integration-techniques-even-and-odd-functions %}): 
 
 $$
 \int^{\infty}_{-\infty} \Delta \phi(\Delta) d\Delta = 0
 $$
+
 And the third integral becomes:
 
 $$
@@ -130,6 +132,8 @@ Assumptions:
 - Taylor series truncated after the $\Delta^2$ term, impicit assumtpion that $f$ is smooth and jumps are small enough that higher moments don't matter.
 - Symmetric step distribution (no drift).
 - Continuum limit: $\tau \rightarrow 0$, $|\Delta| \rightarrow 0$
+
+
 
 ## References
 
