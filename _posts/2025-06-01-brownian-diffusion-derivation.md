@@ -4,8 +4,6 @@ date: 2025-06-01 20:31
 categories: "[math, diffusion]"
 ---
 
-Link to [integration]({% post_url 2025-05-31-integration-techniques-even-and-odd-functions %})
-
 Brownian Diffusion
 
 Einstein's solution to the problem of Brownian motion can be considered to be the beginning of stochastic modeling of natural phenomena. His solution the Brownian diffusion problem has two major findings with regards to the motion of a pollen grain:
@@ -88,7 +86,7 @@ where $f = f(x, t)$. Evaluating the individual terms on the right-hand-side, the
 $$
 \int^{\infty}_{-\infty} \phi(\Delta) d\Delta = 1
 $$
-The second integral is set to zero since it is an odd function: 
+The second integral is set to zero since it is an [odd function]({% post_url 2025-05-31-integration-techniques-even-and-odd-functions %}): 
 
 $$
 \int^{\infty}_{-\infty} \Delta \phi(\Delta) d\Delta = 0
